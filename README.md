@@ -4,20 +4,20 @@ This repository contains the source code for a fully functional Scientific Calcu
 ## Features <br>
 The calculator offers a comprehensive set of features, categorized as follows: <br>
 ### Core Functionality <br>
-* Basic Arithmetic Operations: Supports addition (+), subtraction (-), multiplication (*), and division (/). <br>
-* Order of Operations: Correctly evaluates expressions following standard mathematical precedence (BODMAS/BIDMAS). <br>
-* User Input Handling: Responsive to both button clicks on the graphical interface and keyboard input. <br>
-* Error Handling: Implements mechanisms to gracefully manage mathematical errors, such as division by zero, invalid expressions, and undefined trigonometric results. <br>
+* **Basic Arithmetic Operations:** Supports addition (+), subtraction (-), multiplication (*), and division (/). <br>
+* **Order of Operations:** Correctly evaluates expressions following standard mathematical precedence (BODMAS/BIDMAS). <br>
+* **User Input Handling:** Responsive to both button clicks on the graphical interface and keyboard input. <br>
+* **Error Handling:** Implements mechanisms to gracefully manage mathematical errors, such as division by zero, invalid expressions, and undefined trigonometric results. <br>
 ### Advanced Scientific Features <br>
-* Trigonometric Functions: Includes sin, cos, and tan functions. <br>
-* Angle Mode Toggle: Allows users to switch between Degree (DEG) and Radian (RAD) modes for trigonometric calculations. <br>
-* Logarithmic Functions: Provides log (base 10) and ln (natural logarithm) functions. <br>
-* Square Root: Functionality to compute the square root (√). <br>
-* Factorial: Calculates the factorial of a non-negative integer (x!). <br>
-* Constants: Buttons for inserting mathematical constants π (Pi) and e (Euler's number). <br>
-* Exponentiation: Supports power calculations using the ^ operator. <br>
-* Percentage: Allows for percentage calculations (%). <br>
-* Parentheses: Enables the use of parentheses () for grouping expressions and controlling order of operations. <br>
+* **Trigonometric Functions:** Includes sin, cos, and tan functions. <br>
+* **Angle Mode Toggle:** Allows users to switch between Degree (DEG) and Radian (RAD) modes for trigonometric calculations. <br>
+* **Logarithmic Functions:** Provides log (base 10) and ln (natural logarithm) functions. <br>
+* **Square Root:** Functionality to compute the square root (√). <br>
+* **Factorial:** Calculates the factorial of a non-negative integer (x!). <br>
+* **Constants:** Buttons for inserting mathematical constants π (Pi) and e (Euler's number). <br>
+* **Exponentiation:** Supports power calculations using the ^ operator. <br>
+* **Percentage:** Allows for percentage calculations (%). <br>
+* **Parentheses:** Enables the use of parentheses () for grouping expressions and controlling order of operations. <br>
 ### Usability Enhancements <br>
 * **Memory Functions:** Includes M+ (memory add), M- (memory subtract), MR (memory recall), and MC (memory clear). <br>
 * **Clear Operations:** Dedicated buttons for AC (All Clear) and CE (Clear Entry/Backspace). <br>
