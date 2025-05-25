@@ -1,0 +1,174 @@
+/* === Base body styling === */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+    display: flex; /* Use flexbox to center the calculator */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    background-image: url(bg.png); /* Background image */
+    background-size: cover; /* Cover the entire screen */
+    margin: 0; /* Remove default margin */
+}
+
+/* === Calculator Container === */
+.calculator {
+    width: 400px; /* Fixed width for calculator */
+    background-image: url(calc_bg.jpg); /* Background image for calculator body */
+    background-size: 450px; /* Size of the background image */
+    padding: 20px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation effect */
+}
+
+/* === Display screen === */
+#display {
+    width: 100%; /* Full width */
+    height: 70px; /* Height of the display box */
+    font-size: 1.7rem; /* Large font size for readability */
+    padding: 10px; /* Padding inside the display */
+    text-align: right; /* Align text to the right like traditional calculators */
+    margin-bottom: 15px; /* Space below the display */
+    border-radius: 10px; /* Rounded corners */
+    background: #ffe9c5; /* Light yellow background */
+    box-sizing: border-box; /* Includes padding in width/height calculation */
+}
+
+/* === Top bar (e.g. angle mode toggle, clear history button) === */
+.top-bar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread items apart */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space below top bar */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* === Label for angle mode (e.g. DEG/RAD) === */
+#modeLabel {
+    font-weight: bold; /* Bold text */
+}
+
+/* === Buttons in top bar === */
+.top-bar button {
+    padding: 7px 10px; /* Padding for size */
+    font-size: 0.9rem; /* Font size */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove border */
+    background-color: #fcccc5; /* Light pink background */
+    cursor: pointer; /* Cursor indicates it's clickable */
+}
+
+/* === Hover effect for top bar buttons === */
+.top-bar button:hover {
+    background-color: #f2a99e; /* Slightly darker pink on hover */
+}
+
+/* === Calculator button grid === */
+.buttons {
+    display: grid; /* CSS Grid layout */
+    grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+    grid-gap: 10px; /* Spacing between buttons */
+    margin-bottom: 15px; /* Space below the grid */
+}
+
+/* === Default calculator buttons === */
+button {
+    padding: 15px; /* Padding for size */
+    font-size: 1.1rem; /* Font size */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    background-color: #ffe9c5; /* Light yellow background */
+    transition: background-color 0.2s; /* Smooth hover transition */
+}
+
+/* === Hover effect for regular buttons === */
+button:hover {
+    background-color: #fadbaa; /* Slightly darker on hover */
+}
+
+/* === Buttons with green color (e.g. scientific functions) === */
+button.green {
+    background-color: #c4e28c;
+    color: white;
+}
+button.green:hover {
+    background-color: #a9ca6b;
+}
+
+/* === Buttons with yellow color (e.g. equals or operations) === */
+button.yellow {
+    background-color: #fbc256;
+    color: white;
+}
+button.yellow:hover {
+    background-color: #ecb143;
+}
+
+/* === Buttons with pink color (e.g. memory functions) === */
+button.pink {
+    background-color: #ffba9a;
+    color: white;
+}
+button.pink:hover {
+    background-color: #eba281;
+}
+
+/* === History panel styling === */
+.history {
+    background: #edf5dfcf; /* Light background with transparency */
+    padding: 10px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    max-height: 150px; /* Scrollable height */
+    overflow-y: auto; /* Enable vertical scroll */
+    font-size: 0.9rem; /* Font size for entries */
+}
+
+/* === History title === */
+.history h3 {
+    margin: 0 0 5px 0; /* Space below heading */
+    font-size: 1rem;
+    border-bottom: 1px solid #ccc; /* Underline heading */
+}
+
+/* === History list === */
+.history ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* === History item === */
+.history li {
+    margin-bottom: 5px; /* Space between entries */
+    word-break: break-word; /* Prevent overflow */
+}
+
+/* === Individual list item (code format style) === */
+#historyList li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    font-family: monospace; /* Use code-like font for expressions */
+}
+
+/* === Hover effect for reusable history items === */
+.history-item {
+    cursor: pointer;
+    padding: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* === Responsive Design for Small Screens === */
+@media (max-width: 400px) {
+    button {
+      padding: 15px;
+      font-size: 1rem;
+    }
+
+    #display {
+      font-size: 1.5rem;
+    }
+}

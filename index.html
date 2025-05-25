@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly />
+        
+        <div class="top-bar">
+            <span id="modeLabel">Mode: <strong id="angleMode">DEG</strong></span>
+            <button onclick="toggleAngleMode()">Change Mode</button>
+        </div>
+        <div class="buttons">
+            <!-- Row 1: Memory & Clear -->
+            <button onclick="memoryAdd()">M+</button>
+            <button onclick="memorySubtract()">M-</button>
+            <button onclick="memoryRecall()">MR</button>
+            <button onclick="memoryClear()">MC</button>
+            <button onclick="memoryStore()">MS</button>
+            <button class="green" onclick="clearDisplay()">AC</button>
+        
+            <!-- Row 2 -->
+            <button onclick="appendFunction('sin(')">sin</button>
+            <button onclick="appendFunction('Math.PI')">π</button>
+            <button onclick="appendFunction('Math.E')">e</button>
+            <button onclick="appendFunction('factorial(')">x!</button>
+            <button onclick="appendOperator('^')">^</button>
+            <button class="yellow" onclick="clearEntry()">CE</button>
+        
+            <!-- Row 3 -->
+            <button onclick="appendFunction('cos(')">cos</button>
+            <button onclick="appendFunction('sqrt(')">√</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('+')">+</button>
+        
+            <!-- Row 4 -->
+            <button onclick="appendFunction('tan(')">tan</button>
+            <button onclick="appendOperator('%')">%</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('-')">−</button>
+
+            <!-- Row 5 -->
+            <button onclick="appendFunction('log10(')">log</button>
+            <button onclick="appendFunction('ln(')">ln</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendOperator('*')">×</button>
+            
+            <!-- Row 6 -->
+            <button onclick="appendOperator('(')">(</button>
+            <button onclick="appendOperator(')')">)</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button class="pink" onclick="calculate()">=</button>
+            <button onclick="appendOperator('/')">÷</button>
+        </div>
+        
+        <!-- History -->
+        <div class="history">
+            <h3>History</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
